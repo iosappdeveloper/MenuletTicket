@@ -3,18 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		256AC3DA0F4B6AC300CF3369 /* MenuletTicketAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* MenuletTicketAppDelegate.m */; };
+		7581170417E167DE00E7D1DF /* icon-alt.png in Resources */ = {isa = PBXBuildFile; fileRef = 7581170017E167DE00E7D1DF /* icon-alt.png */; };
+		7581170517E167DE00E7D1DF /* icon-alt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7581170117E167DE00E7D1DF /* icon-alt@2x.png */; };
+		7581170617E167DE00E7D1DF /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7581170217E167DE00E7D1DF /* icon.png */; };
+		7581170717E167DE00E7D1DF /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7581170317E167DE00E7D1DF /* icon@2x.png */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		C8089A0813B6587100DBD5F0 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8089A0713B6587100DBD5F0 /* AppController.m */; };
-		C8089A0B13B6593B00DBD5F0 /* icon-alt.png in Resources */ = {isa = PBXBuildFile; fileRef = C8089A0913B6593B00DBD5F0 /* icon-alt.png */; };
-		C8089A0C13B6593B00DBD5F0 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C8089A0A13B6593B00DBD5F0 /* icon.png */; };
 		C869FDA513B71FB100B410E7 /* AppPreference.plist in Resources */ = {isa = PBXBuildFile; fileRef = C869FDA413B71FB100B410E7 /* AppPreference.plist */; };
 		C869FDD513B7212300B410E7 /* AppPreferenceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C869FDD413B7212300B410E7 /* AppPreferenceManager.m */; };
 /* End PBXBuildFile section */
@@ -30,12 +32,14 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		7581170017E167DE00E7D1DF /* icon-alt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-alt.png"; path = "Resources/Images/icon-alt.png"; sourceTree = "<group>"; };
+		7581170117E167DE00E7D1DF /* icon-alt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-alt@2x.png"; path = "Resources/Images/icon-alt@2x.png"; sourceTree = "<group>"; };
+		7581170217E167DE00E7D1DF /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Resources/Images/icon.png; sourceTree = "<group>"; };
+		7581170317E167DE00E7D1DF /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "Resources/Images/icon@2x.png"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* MenuletTicket-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MenuletTicket-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* MenuletTicket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuletTicket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8089A0613B6587100DBD5F0 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		C8089A0713B6587100DBD5F0 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
-		C8089A0913B6593B00DBD5F0 /* icon-alt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-alt.png"; path = "Resources/Images/icon-alt.png"; sourceTree = "<group>"; };
-		C8089A0A13B6593B00DBD5F0 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Resources/Images/icon.png; sourceTree = "<group>"; };
 		C869FDA413B71FB100B410E7 /* AppPreference.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AppPreference.plist; sourceTree = "<group>"; };
 		C869FDD313B7212300B410E7 /* AppPreferenceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppPreferenceManager.h; sourceTree = "<group>"; };
 		C869FDD413B7212300B410E7 /* AppPreferenceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppPreferenceManager.m; sourceTree = "<group>"; };
@@ -116,8 +120,10 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C8089A0913B6593B00DBD5F0 /* icon-alt.png */,
-				C8089A0A13B6593B00DBD5F0 /* icon.png */,
+				7581170017E167DE00E7D1DF /* icon-alt.png */,
+				7581170117E167DE00E7D1DF /* icon-alt@2x.png */,
+				7581170217E167DE00E7D1DF /* icon.png */,
+				7581170317E167DE00E7D1DF /* icon@2x.png */,
 				8D1107310486CEB800E47090 /* MenuletTicket-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
@@ -161,8 +167,11 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MenuletTicket" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -187,9 +196,11 @@
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
-				C8089A0B13B6593B00DBD5F0 /* icon-alt.png in Resources */,
-				C8089A0C13B6593B00DBD5F0 /* icon.png in Resources */,
 				C869FDA513B71FB100B410E7 /* AppPreference.plist in Resources */,
+				7581170417E167DE00E7D1DF /* icon-alt.png in Resources */,
+				7581170517E167DE00E7D1DF /* icon-alt@2x.png in Resources */,
+				7581170617E167DE00E7D1DF /* icon.png in Resources */,
+				7581170717E167DE00E7D1DF /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,9 +244,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -243,6 +254,7 @@
 				INFOPLIST_FILE = "MenuletTicket-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = MenuletTicket;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -250,6 +262,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -257,6 +270,7 @@
 				INFOPLIST_FILE = "MenuletTicket-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = MenuletTicket;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -269,8 +283,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PREBINDING = NO;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -281,8 +294,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				PREBINDING = NO;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};

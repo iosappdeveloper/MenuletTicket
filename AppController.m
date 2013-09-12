@@ -39,8 +39,8 @@
 	[statusItem setMenu:statusMenu];
 	//Sets the tooptip for our item
 	[statusItem setToolTip:@"My Custom Menu Item"];
-	//Enables highlighting
-	[statusItem setHighlightMode:YES];
+	//Disables default blue highlighting
+	[statusItem setHighlightMode:NO];
 	
 	AppPreferenceManager *appPreference = [[AppPreferenceManager alloc] initWithFileType:AppPreferenceMain];
 
@@ -71,8 +71,8 @@
 	CFRelease(loginItems);
 }
 
--(IBAction)setTicket:(id)sender{
-	NSLog(@"Hello there!");
+//-(IBAction)setTicket:(id)sender {
+//	NSLog(@"Hello there!");
 //
 //    NSString *bringAppToFrontScript = @"\
 //	tell application \"Safari\"\n\
@@ -85,8 +85,32 @@
 //								   initWithSource:bringAppToFrontScript];
 //    returnDescriptor = [scriptObject executeAndReturnError: &errorDict];
 //    [scriptObject release];
-	[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://google.com/"]];
+//
+//	[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://google.com/"]];
+//    
+//    [[NSWorkspace sharedWorkspace] launchApplication:@"Dropbox"];
+//}
+
+- (IBAction)tapMenuItem:(NSMenuItem *)menuItem
+{
+    switch (menuItem.tag) {
+        case 0:
+            [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://google.com/"]];
+            break;
+        case 1:
+            [[NSWorkspace sharedWorkspace] launchApplication:menuItem.title];
+            break;
+        case 2:
+            [self launchAtLogin:menuItem];
+            break;
+        case 3:
+            [self launchAtLogin:menuItem];
+            break;
+        default:
+            break;
+    }
 }
+
 - (IBAction)launchAtLogin:(id)sender {
 	NSMenuItem *launchAtLoginMenuItem = (NSMenuItem *)sender;
 	NSInteger state = [launchAtLoginMenuItem state];
@@ -108,13 +132,13 @@
 
 	[self addRemoveAppToLoginItem:addAppToLoginItemList];
 
-	NSLog(@"menu state = %d", state);
+	NSLog(@"menu state = %ld", (long)state);
 }
 
 - (void)enableLoginItemWithLoginItemsReference:(LSSharedFileListRef )theLoginItemsRefs ForPath:(NSString *)appPath {
 	// We call LSSharedFileListInsertItemURL to insert the item at the bottom of Login Items list.
 	CFURLRef url = (CFURLRef)[NSURL fileURLWithPath:appPath];
-	LSSharedFileListItemRef item = LSSharedFileListInsertItemURL(theLoginItemsRefs, kLSSharedFileListItemLast, NULL, NULL, url, NULL, NULL);		
+	LSSharedFileListItemRef item = LSSharedFileListInsertItemURL(theLoginItemsRefs, kLSSharedFileListItemLast, NULL, NULL, url, NULL, NULL);
 	if (item)
 		CFRelease(item);
 }

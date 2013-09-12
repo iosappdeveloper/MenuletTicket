@@ -17,7 +17,8 @@
 	NSImage *statusHighlightImage;
 }
 
-- (IBAction)setTicket:(id)sender;
+//- (IBAction)setTicket:(id)sender;
 - (IBAction)launchAtLogin:(id)sender;
+- (IBAction)tapMenuItem:(NSMenuItem *)menuItem;
 
 @end

@@ -44,7 +44,7 @@
 	// TODO ashok_matoria : Ensure to keep a copy of the preference file to user area and modify that file.
 	id value = [preferenceData valueForKey:key];
 
-	if (key == kAppPreferenceKey_StartWithLogin && [value boolValue] != [object boolValue]) {
+	if ([key isEqual: kAppPreferenceKey_StartWithLogin] && [value boolValue] != [object boolValue]) {
 		NSMutableDictionary *newDictionary = [[NSMutableDictionary alloc] initWithDictionary:preferenceData];
 
 		[newDictionary setObject:object forKey:kAppPreferenceKey_StartWithLogin];
